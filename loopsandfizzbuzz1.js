@@ -18,19 +18,35 @@ console.assert(sumOfArray([10, 9, 8]) === 27)
 
 // Write a function maxOfArray() that takes an array of numbers as an argument and finds the highest number.
 function maxOfArray (inputArray) {
+  var max = 0
   for (var i = 0; i < inputArray.length; i++) {
-    maxOfArray[i] = inputArray
+    if (typeof inputArray[i] !== 'number') {
+      return NaN
+    }
+    if (inputArray[i] > max) {
+      max = inputArray[i]
+    }
   }
+  return max
 }
 
 console.assert(maxOfArray([2, 4, 3]) === 4)
 console.assert(maxOfArray([10, 9, 8, 100, 7, 6]) === 100)
-console.assert(isNaN(maxOfArray([1, 2, 'bucklemyshoe'])))
+console.assert(isNaN(maxOfArray([1, 2, false, 'bucklemyshoe'])))
 
 /**
 PART 2 *
 Write a function isVowel() that takes a character (i.e. a string of length 1)
 and returns true if it is a vowel, false otherwise. */
+function isVowel () {
+  var vowel = 'a' || 'e' || 'i' || 'o' || 'u'
+  var stringValue = ''
+  if (stringValue === vowel) {
+    return 'true'
+    if (stringValue !== vowel) {
+      return 'false'
+  }
+}
 
 console.assert(isVowel(0) === false)
 console.assert(isVowel('B') === false)
@@ -44,6 +60,15 @@ Define a function reverse() that computes
 the reversal of a string. For example,
 reverse("skoob") should return the
 string "books". */
+
+function reverse () {
+  var string1 = '';
+  var reverseString = '';
+  for (var i = string1.length - 1; i >=0; i--) {
+  }
+  return reverseString
+}
+
 
 console.assert(reverse('books') === 'skoob')
 console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
