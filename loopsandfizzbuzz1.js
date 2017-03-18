@@ -92,6 +92,15 @@ Part 5 *
 Write a function findLongestWord() that takes a string of words and returns the longest word.
 i.e. findLongestWord("a book full of dogs") should return "book" */
 
+function findLongestWord () {
+    var longestWord = 0
+    for (i = 0; i = word.length; i++) {
+      if (longestWord >= word.length) {
+      }
+    }
+    return longestWord
+}
+
 console.assert(findLongestWord('a book full of dogs') === 'book')
 console.assert(findLongestWord("don't mess with Texas") === 'Texas')
 
