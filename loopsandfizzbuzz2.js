@@ -18,7 +18,10 @@ console.assert(squareDance([3, 6, 9, 3])[0] === 9)
 // PART 1
 // Write a function called nicer(). It should clean up the language in its input sentence.
 
-// TODO: put your function here
+function nicer () {
+  str.replace ('mom get the heck in here and bring me a darn sandwich.', 'heck', '');
+  str.replace ('here son, your crappy sandwich is on the dang plate.', 'crappy', '');
+}
 
 console.assert(nicer('mom get the heck in here and bring me a darn sandwich.') === 'mom get the in here and bring me a sandwich.')
 console.assert(nicer('here son, your crappy sandwich is on the dang plate.') === 'here son, your sandwich is on the plate.')
