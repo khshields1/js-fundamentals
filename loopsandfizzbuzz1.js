@@ -81,6 +81,19 @@ write a function the returns a FizzBuzz string for some number N (counting up fr
 - for every number that is a multiple of 5 (but not 3), return "buzz"
 - for every number that is a multiple of 3 and 5, return "fizzbuzz" */
 
+function fizzbuzz () {
+   var N = 'number';
+   while (N = 1 || 2 || 4 || 6 || 8) {
+     return '.'
+   }
+   while (N = 3) {
+     return 'fizz'
+   }
+   while (N = 5) {
+     return 'buzz'
+   }
+}
+
 console.assert(fizzbuzz(1) === '.')
 console.assert(fizzbuzz(2) === '..')
 console.assert(fizzbuzz(3) === '..fizz')
